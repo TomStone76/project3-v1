@@ -97,27 +97,6 @@ class Jobs extends Component {
               </FormBtn>
             </form>
           </Col>
-          {/* <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Available Jobs</h1>
-              </Jumbotron>
-            {this.state.jobList.length ? (
-              <List>
-                {this.state.jobList.map(job => (
-                  <ListItem key={job._id}>
-                    <Link to={"/jobs/" + job._id}>
-                      <strong>
-                        {job.jobType}
-                      </strong>
-                    </Link>
-                    <DeleteBtn onClick={() => this.deleteJob(job._id)} />
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </Col> */}
         </Row>
         <Link to="/listings" className="btn btn-link">
           <span className="text-secondary">Listings</span>
