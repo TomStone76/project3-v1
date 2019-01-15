@@ -17,24 +17,6 @@ class Jobs extends Component {
     timeframe: ""
   };
 
-  // componentDidMount() {
-  //   this.loadJobs();
-  // }
-
-  // loadJobs = () => {
-  //   API.getJobs()
-  //     .then(res =>
-  //       this.setState({ jobList: res.data, jobType: "", location: "", description: "", timeframe: "" })
-  //     )
-  //     .catch(err => console.log(err));
-  // };
-
-  // deleteJob = id => {
-  //   API.deleteJob(id)
-  //     .then(res => this.loadJobs())
-  //     .catch(err => console.log(err));
-  // };
-
   handleInputChange = event => {
     const { name, value } = event.target
     this.setState({
