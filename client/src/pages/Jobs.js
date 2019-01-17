@@ -8,7 +8,12 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, Timeframe, FormBtn, Dropdown } from "../components/Form";
 import { Listings } from "../components/Listings"
 
+const colStyle = {
+  marginLeft: "200px"
+}
+
 class Jobs extends Component {
+
   state = {
     jobList: [],
     jobType: "",
@@ -43,7 +48,7 @@ class Jobs extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-6" style={colStyle} >
             <Jumbotron>
               <h1>Post A Job</h1>
             </Jumbotron>
